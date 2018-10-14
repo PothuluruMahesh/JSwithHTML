@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        //first way object creation(literal)
+        emp = { id: 102, name: "SuKumar", salary: 40000 } 
+        document.write(emp.id + " " + emp.name + " " + emp.salary);
+        
+
+        //second way by instace of Object
+        var emp = new Object();
+        emp.id = 101;
+        emp.name = "Ravi Teja";
+        emp.salary = 50000;
+        document.write("<br>"+emp.id + " " + emp.name + " " + emp.salary);
+
+        //by using object constructor
+        function emp1(id, name, salary) {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+        var  e = new emp1(103, "Nothing", 30000);
+
+        document.write("<br>" + e.id + " " + e.name + " " + e.salary);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

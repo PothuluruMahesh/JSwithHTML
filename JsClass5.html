@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+        function Employee(firstName,lastName)
+        {
+          this.firstName=firstName;
+          this.lastName=lastName;
+        }
+
+        Employee.prototype.fullName = function () {
+            return this.firstName + " " + this.lastName;
+        }
+
+       // Employee.prototype.company=" Hello World!"
+
+        var employee1=new Employee("Mahesh","Pothuluru");
+        var employee2=new Employee("Naresh", "Vasanth");
+        document.writeln(employee1.firstName+" "+employee1.lastName+"<br>");
+        document.writeln(employee2.firstName+" "+employee2.lastName);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
